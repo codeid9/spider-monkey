@@ -5,9 +5,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     background: linear-gradient(45deg, rgb(119, 0, 255), rgb(174, 0, 255));
 }
 section {
@@ -23,6 +23,7 @@ section {
     position: fixed;
     left: 1rem;
     top: 1rem;
+    z-index: 1000;
     filter: drop-shadow(0 0 5px black);
 }
 section > div {
@@ -116,8 +117,9 @@ section > div {
         flex-direction: column-reverse;
     }
     section > div {
+        border: 1px solid;
         width: 100%;
-        justify-content: flex-start;
+        justify-content: flex-end;
     }
     .bg-img{
         opacity: 0.3;
